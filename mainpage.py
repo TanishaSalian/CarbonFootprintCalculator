@@ -117,3 +117,4 @@ def generate_chart(emissions):
 if __name__ == "__main__":
     app.run(debug=True)
 
+

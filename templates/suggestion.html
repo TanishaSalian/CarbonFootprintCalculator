@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carbon Footprint Suggestions</title>
+</head>
+<body>
+    <h1>Suggestions to Reduce Your Carbon Footprint 🌱</h1>
+    <p>Here are some tips to make a positive impact on the environment:</p>
+    <ul>
+        {% for item in suggestions %}
+        <li>
+            <h3>{{ item.category }}</h3>
+            <ul>
+                {% for tip in item.suggestion %}
+                <li>{{ tip }}</li>
+                {% endfor %}
+            </ul>
+        </li>
+        {% endfor %}
+    </ul>
+    <a href="/">Back to Home</a>
+</body>
+</html>
