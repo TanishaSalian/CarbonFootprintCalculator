@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carbon Footprint Tracker</title>
+</head>
+<body>
+    <h1>Welcome to the Carbon Footprint Tracker! 🌍</h1>
+    <form action="/result" method="POST">
+        <h3>Travel:</h3>
+        <label>Weekly car mileage (km):</label>
+        <input type="number" name="car_mileage" required><br>
+        <label>Car fuel type (petrol/diesel/electric):</label>
+        <input type="text" name="car_fuel_type" required><br>
+        <label>Weekly public transport usage (km):</label>
+        <input type="number" name="public_transport_km" required><br>
+        <label>Yearly air travel (km):</label>
+        <input type="number" name="air_travel_km" required><br>
+        <h3>Energy:</h3>
+        <label>Monthly electricity usage (kWh):</label>
+        <input type="number" name="electricity_kwh" required><br>
+        <label>Monthly gas usage (cubic meters):</label>
+        <input type="number" name="gas_usage" required><br>
+        <label>Do you use renewable energy? (yes/no):</label>
+        <input type="text" name="renewable_source" required><br>
+        <h3>Waste:</h3>
+        <label>Weekly waste generated (kg):</label>
+        <input type="number" name="waste_generated" required><br><br>
+        <button type="submit">Calculate</button>
+    </form>
+</body>
+</html>

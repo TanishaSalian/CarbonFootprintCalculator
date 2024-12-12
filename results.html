@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Results</title>
+</head>
+<body>
+    <h1>Your Carbon Footprint Results</h1>
+    <p>Total Carbon Footprint: {{ emissions['total'] }} kg CO2</p>
+    <img src="/static/chart.png" alt="Carbon Footprint Breakdown">
+    <h3>Suggestions:</h3>
+    <ul>
+        {% if emissions['travel'] > 100 %}
+        <li>Use public transport, biking, or carpooling to reduce travel emissions.</li>
+        {% endif %}
+        {% if emissions['energy'] > 100 %}
+        <li>Switch to renewable energy sources and improve home insulation.</li>
+        {% endif %}
+        {% if emissions['waste'] > 10 %}
+        <li>Reduce, reuse, and recycle! Consider composting organic waste.</li>
+        {% endif %}
+    </ul>
+    <a href="/">Back to Home</a>
+</body>
+</html>
