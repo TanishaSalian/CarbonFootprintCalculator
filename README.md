@@ -71,15 +71,3 @@ Matplotlib: A Python library used for creating static, animated, and interactive
 HTML/CSS: Used to structure and style the web pages.
 Python: The primary programming language used for calculations and backend logic.
 
-File Structure
-
-carbon-footprint-tracker/
-│
-├── app.py                    # Main Python application file
-├── requirements.txt           # List of Python dependencies
-├── static/                    # Folder to store generated chart images
-├── templates/                 # Folder containing HTML templates
-│   ├── index.html             # Home page template
-│   ├── result.html            # Result page template
-│   └── suggestion.html        # Suggestions page template
-└── README.md                  # Project documentation
