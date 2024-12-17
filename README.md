@@ -25,21 +25,21 @@ To install the required libraries, follow the steps in the Installation section.
 Installation
 
 1. Clone the Repository
-Clone this repository to your local machine using the command:
+Clone this repository to your local machine using the command
+git clone https://github.com/TanishaSalian/CarbonFootprintCalculator
 
-git clone https://github.com/yourusername/carbon-footprint-tracker.git
 2. Install Dependencies
 Navigate to the project directory and install the necessary libraries:
-
 cd carbon-footprint-tracker
 pip install -r requirements.txt
 3. Run the Application
 Once all dependencies are installed, start the Flask application by running:
 
 python app.py
-The application will run locally on your computer. Open your web browser and navigate to:
 
+The application will run locally on your computer. Open your web browser and navigate to:
 http://127.0.0.1:5000/
+
 Usage
 
 1. Home Page
@@ -47,31 +47,30 @@ On the Home Page, you'll find a form where you can input details about your trav
 
 2. Input Form
 Fill out the following fields to calculate your carbon footprint:
-
 Travel: Weekly car mileage, car fuel type, public transport usage, and air travel distance.
 Energy: Monthly electricity and gas usage, renewable energy source status (yes/no).
 Waste: Weekly waste generation.
+
 3. Result Page
 After submitting your data, the application will:
-
 Calculate your carbon footprint based on the provided details.
 Display the total emissions along with a breakdown of emissions in three categories: Travel, Energy, and Waste.
 Show a visual chart that represents the breakdown of your carbon footprint.
-4. Suggestions Page
-The Suggestions Page will provide you with personalized recommendations for reducing your emissions in the following areas:
 
+5. Suggestions Page
+The Suggestions Page will provide you with personalized recommendations for reducing your emissions in the following areas:
 Travel: Suggestions like using public transport, switching to electric cars, carpooling, etc.
 Energy: Advice on adopting renewable energy sources, improving home insulation, and using energy-efficient appliances.
 Waste: Tips on recycling, composting, and minimizing the use of single-use plastics.
+
 5. Navigation
 You can navigate between the Home page, Results page, and Suggestions page using the links available at the bottom of the pages.
-
 Technologies Used
-
 Flask: A lightweight Python web framework used to create the web application.
 Matplotlib: A Python library used for creating static, animated, and interactive visualizations (used to generate the carbon footprint chart).
 HTML/CSS: Used to structure and style the web pages.
 Python: The primary programming language used for calculations and backend logic.
+
 File Structure
 
 carbon-footprint-tracker/
@@ -84,5 +83,3 @@ carbon-footprint-tracker/
 │   ├── result.html            # Result page template
 │   └── suggestion.html        # Suggestions page template
 └── README.md                  # Project documentation
-License
-
